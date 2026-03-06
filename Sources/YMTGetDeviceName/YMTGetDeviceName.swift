@@ -146,6 +146,16 @@ public class YMTGetDeviceName {
         case iPhone17_3 = "iPhone17,3"
         /// iPhone 16 Plus
         case iPhone17_4 = "iPhone17,4"
+        /// iPhone 16e
+        case iPhone17_5 = "iPhone17,5"
+        /// iPhone 17
+        case iPhone18_3 = "iPhone18,3"
+        /// iPhone 17 Pro
+        case iPhone18_1 = "iPhone18,1"
+        /// iPhone 17 Pro Max
+        case iPhone18_2 = "iPhone18,2"
+        /// iPhone 17 Air
+        case iPhone18_4 = "iPhone18,4"
 
         // MARK: iPad
         /// iPad 1
@@ -326,6 +336,22 @@ public class YMTGetDeviceName {
         case iPad16_5 = "iPad16,5"
         /// iPad Pro 13inch M4 Cellular
         case iPad16_6 = "iPad16,6"
+        /// iPad mini 7th Generation WiFi
+        case iPad16_1 = "iPad16,1"
+        /// iPad mini 7th Generation Cellular
+        case iPad16_2 = "iPad16,2"
+        /// iPad Air 11inch M3 WiFi
+        case iPad15_3 = "iPad15,3"
+        /// iPad Air 11inch M3 Cellular
+        case iPad15_4 = "iPad15,4"
+        /// iPad Air 13inch M3 WiFi
+        case iPad15_5 = "iPad15,5"
+        /// iPad Air 13inch M3 Cellular
+        case iPad15_6 = "iPad15,6"
+        /// iPad 11th Generation WiFi
+        case iPad15_7 = "iPad15,7"
+        /// iPad 11th Generation Cellular
+        case iPad15_8 = "iPad15,8"
 
         /// device name
         func deviceName() -> String {
@@ -404,6 +430,48 @@ public class YMTGetDeviceName {
                 return "iPhone 12 Pro"
             case .iPhone13_4:
                 return "iPhone 12 Pro Max"
+            case .iPhone14_4:
+                return "iPhone 13 mini"
+            case .iPhone14_5:
+                return "iPhone 13"
+            case .iPhone14_2:
+                return "iPhone 13 Pro"
+            case .iPhone14_3:
+                return "iPhone 13 Pro Max"
+            case .iPhone14_7:
+                return "iPhone 14"
+            case .iPhone14_8:
+                return "iPhone 14 Plus"
+            case .iPhone15_2:
+                return "iPhone 14 Pro"
+            case .iPhone15_3:
+                return "iPhone 14 Pro Max"
+            case .iPhone15_4:
+                return "iPhone 15"
+            case .iPhone15_5:
+                return "iPhone 15 Plus"
+            case .iPhone16_1:
+                return "iPhone 15 Pro"
+            case .iPhone16_2:
+                return "iPhone 15 Pro Max"
+            case .iPhone17_1:
+                return "iPhone 16 Pro"
+            case .iPhone17_2:
+                return "iPhone 16 Pro Max"
+            case .iPhone17_3:
+                return "iPhone 16"
+            case .iPhone17_4:
+                return "iPhone 16 Plus"
+            case .iPhone17_5:
+                return "iPhone 16e"
+            case .iPhone18_3:
+                return "iPhone 17"
+            case .iPhone18_1:
+                return "iPhone 17 Pro"
+            case .iPhone18_2:
+                return "iPhone 17 Pro Max"
+            case .iPhone18_4:
+                return "iPhone 17 Air"
             case .iPad1_1:
                 return "iPad 1"
             case .iPad2_1, .iPad2_4:
@@ -510,14 +578,6 @@ public class YMTGetDeviceName {
                 return "iPad Pro 12.9inch 5th Generation WiFi"
             case .iPad13_10, .iPad13_11:
                 return "iPad Pro 12.9inch 5th Generation Cellular"
-            case .iPhone14_4:
-                return "iPhone 13 mini"
-            case .iPhone14_5:
-                return "iPhone 13"
-            case .iPhone14_2:
-                return "iPhone 13 Pro"
-            case .iPhone14_3:
-                return "iPhone 13 Pro Max"
             case .iPad14_1:
                 return "iPad mini 6th Generation WiFi"
             case .iPad14_2:
@@ -532,14 +592,6 @@ public class YMTGetDeviceName {
                 return "iPad Air 5th Generation WiFi"
             case .iPad13_17:
                 return "iPad Air 5th Generation Cellular"
-            case .iPhone14_7:
-                return "iPhone 14"
-            case .iPhone14_8:
-                return "iPhone 14 Plus"
-            case .iPhone15_2:
-                return "iPhone 14 Pro"
-            case .iPhone15_3:
-                return "iPhone 14 Pro Max"
             case .iPad13_18:
                 return "iPad 10th Gen"
             case .iPad13_19:
@@ -552,22 +604,6 @@ public class YMTGetDeviceName {
                 return "iPad Pro 12.9 inch 6th Gen"
             case .iPad14_6:
                 return "iPad Pro 12.9 inch 6th Gen"
-            case .iPhone15_4:
-                return "iPhone 15"
-            case .iPhone15_5:
-                return "iPhone 15 Plus"
-            case .iPhone16_1:
-                return "iPhone 15 Pro"
-            case .iPhone16_2:
-                return "iPhone 15 Pro Max"
-            case .iPhone17_1:
-                return "iPhone 16 Pro"
-            case .iPhone17_2:
-                return "iPhone 16 Pro Max"
-            case .iPhone17_3:
-                return "iPhone 16"
-            case .iPhone17_4:
-                return "iPhone 16 Plus"
             case .iPad14_8, .iPad14_9:
                 return "iPad Air 11 inch M2"
             case .iPad14_10, .iPad14_11:
@@ -576,6 +612,18 @@ public class YMTGetDeviceName {
                 return "iPad Pro 11 inch M4"
             case .iPad16_5, .iPad16_6:
                 return "iPad Pro 13 inch M4"
+            case .iPad16_1:
+                return "iPad mini 7th Generation WiFi"
+            case .iPad16_2:
+                return "iPad mini 7th Generation Cellular"
+            case .iPad15_3, .iPad15_4:
+                return "iPad Air 11 inch M3"
+            case .iPad15_5, .iPad15_6:
+                return "iPad Air 13 inch M3"
+            case .iPad15_7:
+                return "iPad 11th Generation WiFi"
+            case .iPad15_8:
+                return "iPad 11th Generation Cellular"
             }
         }
     }
