@@ -353,6 +353,26 @@ public class YMTGetDeviceName {
         /// iPad 11th Generation Cellular
         case iPad15_8 = "iPad15,8"
 
+
+        /// iPhone 17e
+        case iPhone18_5 = "iPhone18,5"
+        /// iPad Pro 11-inch M5 WiFi
+        case iPad17_1 = "iPad17,1"
+        /// iPad Pro 11-inch M5 Cellular
+        case iPad17_2 = "iPad17,2"
+        /// iPad Pro 13-inch M5 WiFi
+        case iPad17_3 = "iPad17,3"
+        /// iPad Pro 13-inch M5 Cellular
+        case iPad17_4 = "iPad17,4"
+        /// iPad Air 11inch M4 WiFi
+        case iPad16_8 = "iPad16,8"
+        /// iPad Air 11inch M4 Cellular
+        case iPad16_9 = "iPad16,9"
+        /// iPad Air 13inch M4 WiFi
+        case iPad16_10 = "iPad16,10"
+        /// iPad Air 13inch M4 Cellular
+        case iPad16_11 = "iPad16,11"
+
         /// device name
         func deviceName() -> String {
             switch self {
@@ -624,6 +644,18 @@ public class YMTGetDeviceName {
                 return "iPad 11th Generation WiFi"
             case .iPad15_8:
                 return "iPad 11th Generation Cellular"
+
+            case .iPhone18_5:
+                return "iPhone 17e"
+            case .iPad17_1, .iPad17_2:
+                return "iPad Pro 11-inch M5"
+            case .iPad17_3, .iPad17_4:
+                return "iPad Pro 13-inch M5"
+            case .iPad16_8, .iPad16_9:
+                return "iPad Air 11-inch M4"
+            case .iPad16_10, .iPad16_11:
+                return "iPad Air 13-inch M4"
+
             }
         }
     }
